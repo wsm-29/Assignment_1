@@ -1,0 +1,39 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{\label{tab:assignment1} The Effect of Having an Elite College on Call Back Rate}
+\begin{tabular*}{\hsize}{@{\hskip\tabcolsep\extracolsep\fill}l*{3}{c}}
+\hline\hline
+                    &\multicolumn{3}{c}{Called Back}                                  \\
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         \\
+\hline
+Elite School        &       0.137\sym{***}&       0.137\sym{***}&       0.221\sym{***}\\
+Candidate           &    (0.0320)         &    (0.0318)         &    (0.0587)         \\
+[1em]
+White Recruiter     &                     &      0.0352         &      0.0470         \\
+                    &                     &    (0.0328)         &    (0.0463)         \\
+[1em]
+Male Recruiter      &                     &      0.0706         &      0.0829         \\
+                    &                     &    (0.0435)         &    (0.0614)         \\
+[1em]
+Big Company         &                     &      0.0903\sym{**} &       0.157\sym{***}\\
+Candidate           &                     &    (0.0318)         &    (0.0450)         \\
+[1em]
+Elite School        &                     &                     &     -0.0237         \\
+Candidate $\times$ White Recruiter&                     &                     &    (0.0654)         \\
+[1em]
+Elite School        &                     &                     &     -0.0248         \\
+Candidate $\times$ Male Recruiter&                     &                     &    (0.0868)         \\
+[1em]
+Elite School        &                     &                     &      -0.134\sym{*}  \\
+Candidate $\times$ Big Company Candidate&                     &                     &    (0.0636)         \\
+\hline
+Observations        &         864         &         864         &         864         \\
+\(R^{2}\)           &       0.021         &       0.035         &       0.040         \\
+\hline\hline
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{tabular*}
+{\parbox{4.8in}{\footnotesize Notes: This table contains OLS regressions predicting whether the fictitious candidate's job application was called back. \\Standard errors are in parentheses. \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)
+}}
+
+\end{table}
